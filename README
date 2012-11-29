@@ -1,1 +1,5 @@
-This file was created by IntelliJ IDEA 11.1.4 for binding GitHub repository
+    spring mvc 前后端匹配校验
+
+1、通过请求 "/rules" 路径，获取请求参数 path 对应的 mapping 映射中 handler 处理方法
+2、得到方法参数前标识了 javax.validation.Valid 注解的参数 Class 对象
+3、反射获取基于 JSR303 校验规则，返回 JSON 格式的 validation rule
